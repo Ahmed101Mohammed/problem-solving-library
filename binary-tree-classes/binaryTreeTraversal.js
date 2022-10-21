@@ -6,11 +6,11 @@ class BinaryTreeTraversal{
     constructor(rootNaode)
     {
         this.#OriginRoot = rootNaode;
-        this.#TraveralRoot = this.#OriginRoot;
     }
 
     leftPreOrderTraverse()
     {
+        this.#TraveralRoot = this.#OriginRoot;
         if(this.#TraveralRoot === null)
             {
                 return;
@@ -27,6 +27,7 @@ class BinaryTreeTraversal{
 
     rightPreOrderTraverse()
     {
+        this.#TraveralRoot = this.#OriginRoot;
         if(this.#TraveralRoot === null)
             {
                 return;
