@@ -4,7 +4,7 @@ const path = require('path');
 
 // Array-classes modules:
 const ArrayMethods = require(path.join(__dirname, 'array-classes', 'arrayMethods.js'));
-
+const ConvertArrayToBinaryTree = require(path.join(__dirname, 'array-classes', 'convertArrayToBinaryTree.js'));
 // Binary-tree-classes modules:
 const BinaryTreeTraversal = require(path.join(__dirname, 'binary-tree-classes', 'binaryTreeTraversal.js'));
 
@@ -20,6 +20,7 @@ const ComparisonsMethods = require(path.join(__dirname, 'math-classes', 'compari
 // module export:
 module.exports = {
     ArrayMethods,
+    ConvertArrayToBinaryTree,
     BinaryTreeTraversal,
     BinaryTreeNode,
     HashMapForChars,
