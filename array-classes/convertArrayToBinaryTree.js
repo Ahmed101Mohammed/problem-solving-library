@@ -1,5 +1,5 @@
 const path = require('path');
-const BinaryTreeNode =  require(path.join(__dirname,'..', 'dataStructure', 'vinaryTreeNode.js'));
+const BinaryTreeNode =  require(path.join(__dirname,'..', 'dataStructure', 'binaryTreeNode.js'));
 
 class ConvertArrayToBinaryTree
 {

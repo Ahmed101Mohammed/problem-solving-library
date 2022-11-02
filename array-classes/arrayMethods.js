@@ -42,7 +42,14 @@ class ArrayMethods{
 
     isAnArray(item)
     {
-        return (item.constructor === Array);
+        let theItemIsAnArray = true;
+
+        if(item === null || item === undefined || item === NaN || !(item.constructor === Array) )
+        {
+            theItemIsAnArray = false;
+        }
+
+        return theItemIsAnArray;
     }
 }
 
