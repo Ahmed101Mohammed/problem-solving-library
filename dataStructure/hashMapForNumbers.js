@@ -1,18 +1,20 @@
 class HashMapForNumbers{
-
-    #numbers = [];
-    #minusNambers = [];
-
+    constructor()
+    {
+        this.numbers = [];
+        this.minusNambers = [];
+    }
+    
     add(number,value = 0)
     {
         if(number < 0)
         {
             let numberInPositive = number * -1;
-            this.#minusNambers[numberInPositive] = value;
+            this.minusNambers[numberInPositive] = value;
         }
         else
         {
-            this.#numbers[number] = value;
+            this.numbers[number] = value;
         }
     }
 
@@ -23,11 +25,11 @@ class HashMapForNumbers{
         if(number < 0)
         {
             let numberInPositive = number * -1;
-            theValue = this.#minusNambers[numberInPositive];
+            theValue = this.minusNambers[numberInPositive];
         }
         else
         {
-            theValue = this.#numbers[number];
+            theValue = this.numbers[number];
         }
 
         if(theValue === undefined)
@@ -41,8 +43,8 @@ class HashMapForNumbers{
 
     clear()
     {
-        this.#numbers = [];
-        this.#minusNambers = [];
+        this.numbers = [];
+        this.minusNambers = [];
     }
 }
 
