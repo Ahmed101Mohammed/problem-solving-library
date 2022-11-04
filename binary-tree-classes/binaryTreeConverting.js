@@ -2,21 +2,19 @@ class BinaryTreeConverting
 {
     convertBinaryTreeToArray(root)
     {
-        let binaryTreeInArray = [root.value];
+        let binaryTreeInArray = [];
         let nodesOfBinaryTree = [root];
         for(let node of nodesOfBinaryTree)
         {
-            binaryTreeInArray.push(node.left.value);
-            binaryTreeInArray.push(node.right.value);
-            
-            if(node.left !== null)
+            if(node !== null)
             {
+                binaryTreeInArray.push(node.value);
                 nodesOfBinaryTree.push(node.left);
-            }
-
-            if(node.right !== null)
-            {
                 nodesOfBinaryTree.push(node.right);
+            }
+            else
+            {
+                binaryTreeInArray.push(null);
             }
         }
 
@@ -24,4 +22,4 @@ class BinaryTreeConverting
     }
 }
 
-module.export = BinaryTreeConverting;
+module.exports = BinaryTreeConverting;
