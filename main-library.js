@@ -5,8 +5,10 @@ const path = require('path');
 // Array-classes modules:
 const ArrayMethods = require(path.join(__dirname, 'array-classes', 'arrayMethods.js'));
 const ConvertArrayToBinaryTree = require(path.join(__dirname, 'array-classes', 'convertArrayToBinaryTree.js'));
+
 // Binary-tree-classes modules:
 const BinaryTreeTraversal = require(path.join(__dirname, 'binary-tree-classes', 'binaryTreeTraversal.js'));
+const BinaryTreeConverting = require(path.join(__dirname, 'binary-tree-classes', 'binaryTreeConverting.js'));
 
 // DataStructure modules:
 const BinaryTreeNode = require(path.join(__dirname, 'dataStructure', 'binaryTreeNode.js'));
@@ -22,6 +24,7 @@ module.exports = {
     ArrayMethods,
     ConvertArrayToBinaryTree,
     BinaryTreeTraversal,
+    BinaryTreeConverting,
     BinaryTreeNode,
     HashMapForChars,
     HashMapForNumbers,
